@@ -15,6 +15,7 @@ public class Game {
     // Default Constructor
     public Game() {
         newWord();
+        System.out.println("Word is: " + currentWord);
 
         displayString = "";
         for(int i = 0; i < currentWord.length(); i++) {
@@ -70,6 +71,7 @@ public class Game {
 
     public void reset() {
         newWord();
+        System.out.println("Word is: " + currentWord);
 
         displayString = "";
         for(int i = 0; i < currentWord.length(); i++) {

@@ -14,7 +14,6 @@ public class GUI {
     public GUI() {
         // word Initialization
         game = new Game(); 
-        System.out.println("Word is: " + game.currentWord);
 
         // frame Initialization
         frame = new JFrame("Hangman");
@@ -68,6 +67,7 @@ public class GUI {
                 southPanel.lettersLabel.setText(game.alphabet);
 
             } else {
+                southPanel.wordLabel.setText(game.currentWord);
                 southPanel.guessLabel.setText("You lost! :(");
             }
             hangmanPanel.repaint();
